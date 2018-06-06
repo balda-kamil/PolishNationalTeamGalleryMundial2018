@@ -19,6 +19,14 @@ body {
   width: 100%;
 }
 
+@media screen and (min-width: 1100px) {
+  body {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+
 .items {
   height:800px;
   padding: 100px;
