@@ -1,0 +1,95 @@
+html {
+  box-sizing: border-box;
+  background: url('https://www.vtactual.com/es/wp-content/uploads/2018/05/mundial_qqb3s4vdtgom1ixty1hhtj954.jpg') fixed;
+  background-size: cover;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 0;
+  width: 100%;
+}
+
+.items {
+  height:800px;
+  padding: 100px;
+  width:100%;
+  border:1px solid white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  background: rgba(255,255,255,0.1);
+  font-size: 0;
+  perspective: 500px;
+}
+
+.items.active {
+  background: rgba(255,255,255,0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.item {
+  width:200px;
+  height: calc(100% - 40px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: 100;
+  color:rgba(0,0,0,0.15);
+  box-shadow: inset 0 0 0 10px rgba(0,0,0,0.15);
+}
+
+.item:nth-child(2) { background: url('img/fabianski.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(3) { background: url('img/bialkowski.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(4) { background: url('img/szczesny.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(5) { background: url('img/bednarek.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(6) { background: url('img/bereszynski.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(7) { background: url('img/cionek.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(8) { background: url('img/glik.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(9) { background: url('img/piszczek.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(10) { background: url('img/jedrzejczyk.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(11) { background: url('img/pazdan.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(12) { background: url('img/kuba.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(13) { background: url('img/goralski.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(14) { background: url('img/grosicki.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(15) { background: url('img/krychowiak.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(16) { background: url('img/kurzawa.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(17) { background: url('img/linetty.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(18) { background: url('img/peszko.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(19) { background: url('img/rybus.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(20) { background: url('img/zielinski.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(21) { background: url('img/teo.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(22) { background: url('img/lewy.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(23) { background: url('img/milik.jpg') no-repeat; background-size: 100%;}
+.item:nth-child(24) { background: url('img/kownacki.jpg') no-repeat; background-size: 100%;}
+
+
+
+.item:nth-child(even) { transform: scaleX(1.31) rotateY(40deg); }
+.item:nth-child(odd) { transform: scaleX(1.31) rotateY(-40deg); }
+
+.item:first-child{ 
+    visibility: hidden;    
+    }
+
+.item:last-child{ 
+    visibility: hidden;    
+    }
